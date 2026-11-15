@@ -1,0 +1,5 @@
+Date: 2026-11-14
+Environment: Python 3.12
+Command: python -m pytest -q
+Result: 49 passed in 1.82s
+Scope: local engine, parser, mocked API adapters and Streamlit AppTest. No live API calls.
