@@ -1,0 +1,11 @@
+digraph V1 {
+ graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.4", ranksep="0.5", label="V1 | Model-managed game", labelloc=t, fontsize=22, fontname="Helvetica"];
+ node [shape=box, style="rounded,filled", fillcolor="#edf3f8", color="#38627e", fontname="Helvetica", fontsize=14, margin="0.2,0.14"];
+ edge [color="#38627e", fontname="Helvetica", fontsize=11];
+ ui [label="Streamlit chat"];
+ history [label="Conversation history"];
+ rules [label="Room rules + puzzle solutions"];
+ model [label="LLM game master\nInterprets, remembers, decides", fillcolor="#fbedcf"];
+ result [label="Generated reply + escape marker\nNo independent rule validation"];
+ ui -> history; history -> model; rules -> model; model -> result; result -> ui [label="display / append"];
+}
