@@ -1,1 +1,16 @@
-
+digraph V2 {
+ graph [rankdir=TB, bgcolor="white", pad="0.3", nodesep="0.4", ranksep="0.35", label="V2 | Python-validated game", labelloc=t, fontsize=22, fontname="Helvetica"];
+ node [shape=box, style="rounded,filled", fillcolor="#edf3f8", color="#38627e", fontname="Helvetica", fontsize=14, margin="0.18,0.12"];
+ edge [color="#38627e", fontname="Helvetica", fontsize=11];
+ input [label="Player input"];
+ parser [label="LLM action parser\nNo author solutions"];
+ validation [label="JSON + literal-value checks"];
+ confirm [label="Player confirms proposal"];
+ state [label="Session state + author rules"];
+ engine [label="Python engine\nInventory, codes, prerequisites", fillcolor="#d7eee6"];
+ result [label="Next state + factual outcome"];
+ atmosphere [label="LLM selects safe atmosphere\nOptional; failure preserves result", fillcolor="#fbedcf"];
+ ui [label="Streamlit display + JSON export"];
+ input -> parser -> validation -> confirm -> engine -> result -> ui;
+ state -> engine; result -> atmosphere [label="after state stored"]; atmosphere -> ui;
+}
