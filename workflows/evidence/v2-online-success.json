@@ -1,0 +1,92 @@
+{
+  "version": "Version 2 \u2014 Validated",
+  "mode": "Gemini",
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "You wake in a locked library. Rain taps the windows. A bookshelf, a locked drawer, a desk, a painting and an exit door surround you. Solve three puzzles to escape. Start by examining the bookshelf."
+    },
+    {
+      "role": "user",
+      "content": "examine bookshelf"
+    },
+    {
+      "role": "assistant",
+      "content": "Rain whispers against the library windows.\n\nFour books: Winter = 2, Spring = 3, Autumn = 4, Summer = 1. An inscription reads: 'Begin with spring; follow the seasons.'"
+    },
+    {
+      "role": "user",
+      "content": "enter 3142 on drawer"
+    },
+    {
+      "role": "assistant",
+      "content": "Rain whispers against the library windows.\n\nThe drawer opens. A brass key is inside; collect it before using it."
+    },
+    {
+      "role": "user",
+      "content": "take key"
+    },
+    {
+      "role": "assistant",
+      "content": "Dust drifts through a narrow shaft of light.\n\nYou collect the brass key from the drawer."
+    },
+    {
+      "role": "user",
+      "content": "use key on desk"
+    },
+    {
+      "role": "assistant",
+      "content": "Dust drifts through a narrow shaft of light.\n\nThe brass key unlocks the desk panel. It asks: 'I have hands but cannot clap; I measure what never stops. What do I measure?'"
+    },
+    {
+      "role": "user",
+      "content": "answer time"
+    },
+    {
+      "role": "assistant",
+      "content": "Rain whispers against the library windows.\n\nCorrect. The desk compartment opens, revealing a folded note. Take it."
+    },
+    {
+      "role": "user",
+      "content": "take note"
+    },
+    {
+      "role": "assistant",
+      "content": "Rain whispers against the library windows.\n\nYou collect the note. It reads: Moon = 5, Sun = 8, Star = 2, Leaf = 6."
+    },
+    {
+      "role": "user",
+      "content": "examine painting"
+    },
+    {
+      "role": "assistant",
+      "content": "Rain whispers against the library windows.\n\nThe painting shows symbols from left to right: Moon, Sun, Star, Leaf. Its caption reads: 'The order opens the way.'"
+    },
+    {
+      "role": "user",
+      "content": "enter 5826 on door"
+    },
+    {
+      "role": "assistant",
+      "content": "Dust drifts through a narrow shaft of light.\n\nThe symbols align. The door swings open. You step into daylight. You escaped!"
+    }
+  ],
+  "state": {
+    "inventory": [
+      "key",
+      "note"
+    ],
+    "drawer_open": true,
+    "desk_unlocked": true,
+    "desk_open": true,
+    "painting_seen": true,
+    "escaped": true,
+    "solved": [
+      "drawer",
+      "desk",
+      "symbols"
+    ]
+  }
+}

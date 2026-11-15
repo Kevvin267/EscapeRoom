@@ -1,0 +1,77 @@
+{
+  "version": "Version 1 \u2014 Baseline",
+  "mode": "Gemini",
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "You wake in a locked library. Rain taps the windows. A bookshelf, a locked drawer, a desk, a painting and an exit door surround you. Solve three puzzles to escape. Start by examining the bookshelf."
+    },
+    {
+      "role": "user",
+      "content": "examine bookshelf"
+    },
+    {
+      "role": "assistant",
+      "content": "You examine the bookshelf. Among the volumes, four books stand out with distinct numbers marked on their spines:\n\n- Winter = 2\n- Spring = 3\n- Autumn = 4\n- Summer = 1\n\nCarved into the wood beneath them is an inscription: *\"Begin with spring; follow the seasons.\"*"
+    },
+    {
+      "role": "user",
+      "content": "enter 3142 on drawer"
+    },
+    {
+      "role": "assistant",
+      "content": "The code 3142 works! A heavy click echoes as the lock releases, and the drawer slides open. \n\nInside lies a brass key."
+    },
+    {
+      "role": "user",
+      "content": "take key"
+    },
+    {
+      "role": "assistant",
+      "content": "You take the brass key and add it to your inventory."
+    },
+    {
+      "role": "user",
+      "content": "use key on desk"
+    },
+    {
+      "role": "assistant",
+      "content": "You insert the brass key into the desk's lock and turn it. A panel on the desk slides back, revealing a small lock mechanism with an engraved riddle:\n\n*\"I have hands but cannot clap; I measure what never stops. What do I measure?\"*\n\nBeneath the riddle is an input mechanism for your answer."
+    },
+    {
+      "role": "user",
+      "content": "answer time"
+    },
+    {
+      "role": "assistant",
+      "content": "The mechanism clicks, accepting your answer. A secret compartment opens inside the desk, revealing a small note that reads:\n\n*\"Moon 5, Sun 8, Star 2, Leaf 6\"*"
+    },
+    {
+      "role": "user",
+      "content": "take note"
+    },
+    {
+      "role": "assistant",
+      "content": "You pick up the note and add it to your inventory."
+    },
+    {
+      "role": "user",
+      "content": "examine painting"
+    },
+    {
+      "role": "assistant",
+      "content": "You examine the painting. It depicts a surreal night sky with four prominent symbols arranged clearly from left to right: a Moon, a Sun, a Star, and a Leaf."
+    },
+    {
+      "role": "user",
+      "content": "enter 5826 on door"
+    },
+    {
+      "role": "assistant",
+      "content": "You punch the code 5826 into the lock on the exit door. Heavy bolts slide back, a green light flashes on the keypad, and the heavy door swings open, leading to the outside world. You have successfully escaped the locked library! "
+    }
+  ],
+  "state": null
+}

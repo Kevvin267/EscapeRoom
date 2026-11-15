@@ -1,0 +1,29 @@
+{
+  "version": "Version 1 \u2014 Baseline",
+  "mode": "Gemini",
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "You wake in a locked library. Rain taps the windows. A bookshelf, a locked drawer, a desk, a painting and an exit door surround you. Solve three puzzles to escape. Start by examining the bookshelf."
+    },
+    {
+      "role": "user",
+      "content": "use key on desk"
+    },
+    {
+      "role": "assistant",
+      "content": "You do not have a key. \n\nThe desk remains locked. You are in the library with a bookshelf, a locked drawer, a desk, a painting, and the exit door."
+    },
+    {
+      "role": "user",
+      "content": "enter 0000 on drawer"
+    },
+    {
+      "role": "assistant",
+      "content": "The drawer mechanism clicks, but the lock does not open. The code 0000 is incorrect."
+    }
+  ],
+  "state": null
+}

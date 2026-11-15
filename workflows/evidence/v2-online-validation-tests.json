@@ -1,0 +1,37 @@
+{
+  "version": "Version 2 \u2014 Validated",
+  "mode": "Gemini",
+  "provider": "gemini",
+  "model": "gemini-3.6-flash",
+  "messages": [
+    {
+      "role": "assistant",
+      "content": "You wake in a locked library. Rain taps the windows. A bookshelf, a locked drawer, a desk, a painting and an exit door surround you. Solve three puzzles to escape. Start by examining the bookshelf."
+    },
+    {
+      "role": "user",
+      "content": "use key on desk"
+    },
+    {
+      "role": "assistant",
+      "content": "Rain whispers against the library windows.\n\nYou must collect an available item before using it."
+    },
+    {
+      "role": "user",
+      "content": "enter 0000 on drawer"
+    },
+    {
+      "role": "assistant",
+      "content": "[AI atmosphere unavailable; validated result follows.]\n\nIncorrect drawer code. The lock does not change."
+    }
+  ],
+  "state": {
+    "inventory": [],
+    "drawer_open": false,
+    "desk_unlocked": false,
+    "desk_open": false,
+    "painting_seen": false,
+    "escaped": false,
+    "solved": []
+  }
+}
